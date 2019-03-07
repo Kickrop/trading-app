@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <div>pam</div>
+        
+        <router-view></router-view>
     </div>
 </template>
 
