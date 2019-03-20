@@ -1,7 +1,7 @@
 <template>
     <div>
         <app-stock 
-        v-for="s in stocks" :s="s" :key="s.id" 
+        v-for="stock in stocks" :stock="stock" :key="stock.id" 
         >
  <!-- :name="name" :price="price" is="stocks"  -->
             
@@ -26,6 +26,6 @@ export default {
     components: {
      appStock: Stock
     },
-    props: ['s']
+    props: ['stock']
 }
 </script>
