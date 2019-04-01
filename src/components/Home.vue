@@ -1,10 +1,19 @@
 <template>
     <div>
-        <h1>The Home Page</h1>
+        <h1>Trade or View your portfolio</h1>
+        <h6>You may Save & Load your Data</h6>
+        <h6>Click on 'End Day' to begin a New Day!</h6>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores, aut autem, blanditiis consequuntur
-            dolore excepturi laborum maiores minima nihil non nulla obcaecati quas quibusdam quod sed suscipit vero
-            voluptatem.</p>
-
+        <p>Your Funds: {{ funds }}</p>
     </div>
 </template>
+
+<script>
+export default {
+    computed: {
+        funds() {
+            return this.$store.getters.funds;
+        }
+    }
+}
+</script>
