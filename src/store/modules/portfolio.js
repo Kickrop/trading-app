@@ -1,5 +1,5 @@
 const state = {
-    funds: [10000],
+    funds: 10000,
     stocks: []
 };
 
@@ -45,6 +45,9 @@ const getters = {
             }
         });
     },
+    funds(state) {
+        return state.funds;
+    }
 };
 
 export default {
